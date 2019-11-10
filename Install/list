@@ -123,7 +123,7 @@ chmod +x /etc/autostart
 wget -qO- https://raw.githubusercontent.com/twossh/SSHPLUS/master/Sistema/versao |sed -n '1 p' |cut -d' ' -f2 > /bin/versao && cat /bin/versao > /home/sshplus
 service ssh restart > /dev/null 2>&1
 [[ $(ps x | grep "bot_plus"|grep -v grep | wc -l) != '0' ]] && {
-[[ ! -e "/etc/SSHPlus/ShellBot.sh" ]] && wget -qO- https://raw.githubusercontent.com/shellscriptx/shellbot/master/ShellBot.sh > /etc/SSHPlus/ShellBot.sh
+[[ ! -e "/etc/SSHPlus/ShellBot.sh" ]] && wget -qO- https://raw.githubusercontent.com/mdutra1221/vps/master/ShellBot.sh > /etc/SSHPlus/ShellBot.sh
 screen -r -S "bot_plus" -X quit
 screen -r -S "udpvpn" -X quit
 screen -wipe 1>/dev/null 2>/dev/null
