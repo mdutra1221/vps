@@ -1,10 +1,10 @@
 #!/bin/bash
 
-wget https://github.com/mdutra1221/vps/blob/master/Install/list > /dev/null 2>&1
-wget https://github.com/mdutra1221/vps/blob/master/versao -O /bin/versao > /dev/null 2>&1
-wget https://github.com/mdutra1221/vps/blob/master/Install/licence -O /usr/lib/licence > /dev/null 2>&1
-wget https://github.com/mdutra1221/vps/blob/master/Install/sshplus -O /home/sshplus > /dev/null 2>&1
-wget https://github.com/mdutra1221/vps/blob/master/versao -O /home/versao > /dev/null 2>&1
+wget https://raw.githubusercontent.com/mdutra1221/vps/master/Install/list > /dev/null 2>&1
+wget https://raw.githubusercontent.com/mdutra1221/vps/master/versao -O /bin/versao > /dev/null 2>&1
+wget https://raw.githubusercontent.com/mdutra1221/vps/master/Install/licence -O /usr/lib/licence > /dev/null 2>&1
+wget https://raw.githubusercontent.com/mdutra1221/vps/master/Install/sshplus -O /home/sshplus > /dev/null 2>&1
+wget https://raw.githubusercontent.com/mdutra1221/vps/master/versao -O /home/versao > /dev/null 2>&1
 
 clear
 [[ "$EUID" -ne 0 ]] && echo -e "\033[1;33mDesculpe, \033[1;33mvocê precisa executar como root\033[0m" && rm -rf $HOME/Plus > /dev/null 2>&1 && return 1
